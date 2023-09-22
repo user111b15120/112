@@ -1,1 +1,31 @@
+class CTest {
+    int num;
 
+    void test() {
+        if(num == 0)
+            System.out.println("此數為0");
+        else if(num%2 == 0)
+            System.out.println("此數是偶數");
+        else if(num%2 != 0)
+            System.out.println("此數是奇數");
+    }
+}
+public class Ex07 {
+    public static void main(String[] args) {
+        CTest x = new CTest();
+        CTest y = new CTest();
+        CTest z = new CTest();
+
+        x.num = 3;
+        System.out.print("x= " + x.num + ", ");
+        x.test();
+
+        y.num = 8;
+        System.out.print("y= " + y.num + ", ");
+        y.test();
+
+        z.num = 8;
+        System.out.print("z= " + z.num + ", ");
+        z.test();
+    }
+}
