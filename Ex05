@@ -3,10 +3,10 @@ class CBox{
     int width;
     int height;
     int volume(){
-        return length * width * height;
+        return (length * width * height);
     }
     int surfaceArea(){
-        return (length * width + length * height + width * height) * 2;
+        return ((length * width * length * height * width * height) * 2);
     }
     void showData(){
         System.out.println("length= " + length);
@@ -19,7 +19,7 @@ class CBox{
         System.out.println("surface area= " + surfaceArea());
     }
 }
-public class ex05 {
+public class Ex05 {
     public static void main(String[] args){
         CBox box = new CBox(); ;
 
