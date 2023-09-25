@@ -1,0 +1,44 @@
+import java.lang.Math;
+
+class CSphere{
+    private int x;
+    private int y;
+    private int z;
+    private int radius;
+
+    public CSphere() {
+        x = 0;
+        y = 0;
+        z = 0;
+        radius = 1;
+    }
+    public void setLocation(int newx, int newy, int newz){
+        x = newx;
+        y = newy;
+        z = newz;
+    }
+    public void setRadius(int newradius){
+        radius = newradius;
+    }
+    public double surfaceArea(){
+        return(4 * Math.PI * Math.pow(radius, 2));
+    }
+    public double volume(){
+        return((4.0 * Math.PI * Math.pow(radius, 3)) / 3.0);
+    }
+    public void showCenter(){
+        System.out.println("圓心座標：(" + x + ", " + y + ", " + z + ")");
+    }
+}
+
+public class Ex16 {
+    public static void main(String[] args){
+        CSphere sphere = new CSphere();
+        sphere.setLocation(3, 4, 5);
+        sphere.setRadius(1);
+
+        System.out.println("表面積: " + sphere.surfaceArea());
+        System.out.println("體積: " + sphere.volume());
+        sphere.showCenter();
+    }
+}
