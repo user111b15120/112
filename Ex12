@@ -20,6 +20,7 @@ class CWin {
         System.out.println("W=" + width, "H=" + height);
     }
 }
+
 public class Ex12 {
     public static void main(String[] args) {
         CWin cw = new CWin();
